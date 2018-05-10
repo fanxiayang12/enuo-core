@@ -7,6 +7,7 @@ var Redis = require('./lib/Redis');
 var errors = require('./lib/errors');
 var logger = require('./lib/logger');
 var utils = require('./lib/utils');
+var MQDao = require('./lib/mq/MQDao');
 
 /**
  * Created by zhanxiaoping 
@@ -24,7 +25,8 @@ var enuo = {
     MysqlDB: MysqlDB,
     Redis: Redis,
     MongoDao: MongoDao,
-    MysqlDao: MysqlDao
+    MysqlDao: MysqlDao,
+    MQDao: MQDao
 };
 
 module.exports = enuo;
