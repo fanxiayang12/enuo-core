@@ -10,12 +10,9 @@ var errors = require('./lib/errors');
 var logger = require('./lib/logger');
 var utils = require('./lib/utils');
 var MQDao = require('./lib/mq/MQDao');
+var httpUtil = require('./lib/httpUtil');
 
-/**
- * Created by zhanxiaoping 
- * zhanxp@me.com
- */
-var enuo = {
+module.exports = {
     mongo: new MongoDB(),
     mysql: new MysqlDB(),
     api: api,
@@ -23,6 +20,8 @@ var enuo = {
     errors: errors,
     logger: logger,
     utils: utils,
+    httpUtil,
+
     Mongo: Mongo,
     MongoDB: MongoDB,
     Mysql: Mysql,
@@ -32,5 +31,3 @@ var enuo = {
     MysqlDao: MysqlDao,
     MQDao: MQDao
 };
-
-module.exports = enuo;
