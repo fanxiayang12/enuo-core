@@ -11,14 +11,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/zhanxp/enuo-core.git"
+        "url": "git+https://github.com/fanxiayang12/enuo-core.git"
     },
-    "author": "zhanxp <zhanxp@me.com>",
+    "author": "fanxiayang <751510087@qq.com>",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/zhanxp/enuo-core/issues"
+        "url": "https://github.com/fanxiayang12/enuo-core/issues"
     },
-    "homepage": "https://github.com/zhanxp/enuo-core#readme",
+    "homepage": "https://github.com/fanxiayang12/enuo-core#readme",
     "dependencies": {
         "amqplib": "^0.5.2",
         "lodash": "^4.17.10",
