@@ -11,6 +11,7 @@ var logger = require('./lib/logger');
 var utils = require('./lib/utils');
 var MQDao = require('./lib/mq/MQDao');
 var httpUtil = require('./lib/httpUtil');
+var Cache = require('./lib/Cache');
 
 module.exports = {
     mongo: new MongoDB(),
@@ -21,7 +22,9 @@ module.exports = {
     logger: logger,
     utils: utils,
     httpUtil,
+    cache: new Cache(),
 
+    Cache,
     Mongo: Mongo,
     MongoDB: MongoDB,
     Mysql: Mysql,
