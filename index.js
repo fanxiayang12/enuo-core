@@ -10,6 +10,7 @@ var errors = require('./lib/errors');
 var logger = require('./lib/logger');
 var utils = require('./lib/utils');
 var MQDao = require('./lib/mq/MQDao');
+var MQ = require('./lib/mq/MQ')
 var httpUtil = require('./lib/httpUtil');
 var Cache = require('./lib/Cache');
 
@@ -32,5 +33,6 @@ module.exports = {
     Redis: Redis,
     MongoDao: MongoDao,
     MysqlDao: MysqlDao,
-    MQDao: MQDao
+    MQDao: MQDao,
+    MQ,
 };
